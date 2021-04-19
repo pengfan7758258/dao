@@ -1,0 +1,13 @@
+DAO(Data Access object)数据访问对象只是一种设计思想，目的是简化对数据库层的操作。针对实体类（数据模型类）对象，封装
+一套与数据库的SDK(Software Develop Kit)软件开发工具。
+
+合理的DAO的SDK的设计：
+- dao(基础数据库的操作模块)
+    -- __init__
+    -- __base__
+- entity(实体类模块)
+    -- user
+    -- order
+- db(具体数据操作)
+    -- user_db
+    -- order_db
